@@ -1,0 +1,17 @@
+﻿<Window x:Class="Internet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Name="window"
+        xmlns:local="clr-namespace:Internet"
+        mc:Ignorable="d"
+        Title="Internet Server" Height="402.694" Width="245.353" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="images.png">
+    <Grid Background="#FFEFEBE9">
+        <TextBox Style="{StaticResource MaterialDesignFilledTextFieldTextBox}" IsEnabled="{Binding IsChecked, ElementName=MaterialDesignOutlinedPasswordFieldPasswordBoxEnabledComboBox}" materialDesign:HintAssist.Hint="Host" x:Name="Host" HorizontalAlignment="Left" Height="70" Margin="10,10,0,0" VerticalAlignment="Top" Width="211" VerticalContentAlignment="Center" MaxLength="25" HorizontalContentAlignment="Center" KeyDown="Save_Microtik_Login_KeyDown" FontWeight="Bold" FontSize="16"/>
+        <TextBox Style="{StaticResource MaterialDesignFilledTextFieldTextBox}" IsEnabled="{Binding IsChecked, ElementName=MaterialDesignOutlinedPasswordFieldPasswordBoxEnabledComboBox}" materialDesign:HintAssist.Hint="User"  x:Name="User" HorizontalAlignment="Left" Height="70" Margin="10,105,0,0" VerticalAlignment="Top" Width="211" VerticalContentAlignment="Center" MaxLength="25" HorizontalContentAlignment="Center" KeyDown="Save_Microtik_Login_KeyDown" FontWeight="Bold" FontSize="16"/>
+        <PasswordBox Style="{StaticResource MaterialDesignFilledPasswordFieldPasswordBox}" IsEnabled="{Binding IsChecked, ElementName=MaterialDesignOutlinedPasswordFieldPasswordBoxEnabledComboBox}" materialDesign:HintAssist.Hint="Password"  x:Name="Pass" Height="70" Margin="10,200,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" MaxLength="25" HorizontalContentAlignment="Center" KeyDown="Save_Microtik_Login_KeyDown" FontWeight="Bold" FontSize="16" HorizontalAlignment="Left" Width="211"/>
+        <Button Style="{DynamicResource MaterialDesignRaisedButton}" materialDesign:ShadowAssist.ShadowDepth="Depth4" Content="Login" Height="41" Margin="10,294,0,0" VerticalAlignment="Top" Click="Login_Microtik_Login" HorizontalAlignment="Left" Width="211"/>
+        <Label Content="For support 01060506595" HorizontalAlignment="Left" Margin="10,340,0,0" VerticalAlignment="Top" Height="28" Width="211" FontSize="14" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" AutomationProperties.IsRequiredForForm="True" Background="{x:Null}" Foreground="#DD170EA2"/>
+    </Grid>
+</Window>
